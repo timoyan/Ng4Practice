@@ -1,0 +1,8 @@
+Mom's Behavior 
+<ng-container *ngFor="let mb of momBehavior; let i =index">
+  <input type="button" value="{{mb}}" (click)="momAct($event);" />
+</ng-container>
+
+<ng-container *ngFor="let child of childData; let i = index">
+  <app-children [child]="child"></app-children>
+</ng-container>
